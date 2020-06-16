@@ -1,4 +1,4 @@
-package com.sardul.jdbc.helpers;
+package com.java.jdbc.helpers;
 
 public class JDBCConstants {
     public static final String DRIVER_NAME = "com.mysql.cj.jdbc.Driver";

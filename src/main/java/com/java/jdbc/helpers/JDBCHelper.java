@@ -1,4 +1,4 @@
-package com.sardul.jdbc.helpers;
+package com.java.jdbc.helpers;
 
 import java.sql.*;
 

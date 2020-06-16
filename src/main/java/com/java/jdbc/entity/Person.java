@@ -1,4 +1,4 @@
-package com.sardul.jdbc.entity;
+package com.java.jdbc.entity;
 
 import java.util.Date;
 

@@ -1,7 +1,7 @@
-package com.sardul.jdbc.dao;
+package com.java.jdbc.dao;
 
-import com.sardul.jdbc.entity.Person;
-import com.sardul.jdbc.helpers.JDBCHelper;
+import com.java.jdbc.entity.Person;
+import com.java.jdbc.helpers.JDBCHelper;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -22,8 +22,8 @@ public class JDBCDaoImpl
 
     public static void main( String[] args )
     {
-        Person person = new Person( 2, "James", "Bond", "007@jamesbond.com", new java.util.Date() );
-        Person person2 = new Person( 3, "Forest", "Gump", "forestgump@jamesbond.com", new java.util.Date() );
+        Person person = new Person( 1, "James", "Bond", "007@jamesbond.com", new java.util.Date() );
+        Person person2 = new Person( 2, "Forest", "Gump", "forestgump@jamesbond.com", new java.util.Date() );
 
         try
         {
@@ -54,11 +54,11 @@ public class JDBCDaoImpl
             System.out.println( "Retrived person2 from DB " + tempPerson2 );
             System.out.println();
             System.out.println( "--------------------------------------------------------------------------------------" );
-//            // Delete
-//            deletePerson( 2 );
-//            System.out.println( "Deleted person2 from DB.This is \"D\" of CRUD " );
-//            System.out.println();
-//            System.out.println( "--------------------------------------------------------------------------------------" );
+            // Delete
+            deletePerson( 2 );
+            System.out.println( "Deleted person2 from DB.This is \"D\" of CRUD " );
+            System.out.println();
+            System.out.println( "--------------------------------------------------------------------------------------" );
             // Read(get all)
             List<Person> tempPersons = retrivePersons();
             System.out.println( "Retrived all persons from DB. Notice person 2 is not present" );
@@ -69,8 +69,8 @@ public class JDBCDaoImpl
             System.out.println();
             System.out.println( "--------------------------------------------------------------------------------------" );
             // Delete
-//            deleteAllRecords();
-//            System.out.println( "Deleted all records" );
+            deleteAllRecords();
+            System.out.println( "Deleted all records" );
         }
         catch ( SQLException e )
         {
